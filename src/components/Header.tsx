@@ -39,7 +39,7 @@ const Header = () => {
             <Button
               asChild
               variant="outline"
-              className="hidden md:inline-flex border-gold-600 text-white hover:bg-gold-600/10"
+              className="hidden md:inline-flex border-gold-600 text-gold-600 bg-transparent hover:bg-white hover:text-navy-primary hover:border-white"
             >
               <Link to="/apply">Apply for Assistance</Link>
             </Button>
