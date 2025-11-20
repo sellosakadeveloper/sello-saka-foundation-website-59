@@ -120,11 +120,11 @@ const CompetitionsTab = () => {
   return (
     <Card className="bg-white">
       <CardHeader>
-        <CardTitle className="text-navy-primary flex justify-between items-center">
-          <span>Competition Management</span>
+        <CardTitle className="text-navy-primary flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+          <span className="text-lg sm:text-2xl">Competition Management</span>
           <Dialog open={showForm} onOpenChange={setShowForm}>
             <DialogTrigger asChild>
-              <Button className="bg-gold-600 hover:bg-gold-400 text-navy-primary">
+              <Button className="bg-gold-600 hover:bg-gold-400 text-navy-primary w-full sm:w-auto">
                 Create Competition
               </Button>
             </DialogTrigger>

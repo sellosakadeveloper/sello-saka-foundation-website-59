@@ -45,11 +45,11 @@ const Contact = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="py-20 bg-white">
+      <section className="py-12 sm:py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-3 gap-6 sm:gap-8 max-w-7xl mx-auto">
             {/* Contact Info */}
-            <div className="space-y-6">
+            <div className="space-y-4 sm:space-y-6">
               <Card className="border-2 border-navy-600 p-6">
                 <div className="w-12 h-12 rounded-lg bg-gold-600/10 flex items-center justify-center mb-4">
                   <Mail className="w-6 h-6 text-gold-600" />
