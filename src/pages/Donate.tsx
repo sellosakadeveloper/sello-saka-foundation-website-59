@@ -70,10 +70,10 @@ const Donate = () => {
       </section>
 
       {/* Donation Form */}
-      <section className="py-20 bg-beige-200">
+      <section className="py-12 sm:py-20 bg-beige-200">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <Card className="border-2 border-navy-600 p-8">
+            <Card className="border-2 border-navy-600 p-4 sm:p-8">
               <form onSubmit={handleSubmit} className="space-y-8">
                 {/* Donation Type */}
                 <div>
@@ -102,8 +102,8 @@ const Donate = () => {
 
                 {/* Amount Selection */}
                 <div>
-                  <Label className="text-lg font-semibold mb-4 block">Select Amount (ZAR)</Label>
-                  <div className="grid grid-cols-3 gap-3 mb-4">
+                  <Label className="text-base sm:text-lg font-semibold mb-3 sm:mb-4 block">Select Amount (ZAR)</Label>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-3 mb-4">
                     {amounts.map((amount) => (
                       <Button
                         key={amount}

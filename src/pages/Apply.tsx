@@ -128,10 +128,10 @@ const Apply = () => {
       </section>
 
       {/* Application Form */}
-      <section className="py-20 bg-beige-200">
+      <section className="py-12 sm:py-20 bg-beige-200">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <Card className="border-2 border-navy-600 p-8">
+            <Card className="border-2 border-navy-600 p-4 sm:p-8">
               <h2 className="text-3xl font-bold text-navy-primary mb-8">Application Form</h2>
               
               <form onSubmit={handleSubmit} className="space-y-8">

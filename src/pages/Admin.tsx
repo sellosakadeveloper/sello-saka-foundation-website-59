@@ -69,12 +69,12 @@ const Admin = () => {
   return (
     <div className="min-h-screen bg-gray-100">
       <header className="bg-navy-primary text-white p-4 shadow-lg">
-        <div className="container mx-auto flex justify-between items-center">
-          <h1 className="text-2xl font-bold">Admin Dashboard</h1>
+        <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+          <h1 className="text-xl sm:text-2xl font-bold">Admin Dashboard</h1>
           <Button
             onClick={handleLogout}
             variant="outline"
-            className="border-gold-600 text-gold-600 hover:bg-gold-600 hover:text-navy-primary"
+            className="border-gold-600 text-gold-600 hover:bg-gold-600 hover:text-navy-primary w-full sm:w-auto"
           >
             <LogOut className="mr-2 h-4 w-4" />
             Logout
@@ -82,13 +82,13 @@ const Admin = () => {
         </div>
       </header>
 
-      <main className="container mx-auto p-6">
+      <main className="container mx-auto p-3 sm:p-6">
         <Tabs defaultValue="applications" className="w-full">
-          <TabsList className="grid w-full grid-cols-4 bg-white">
-            <TabsTrigger value="applications">Applications</TabsTrigger>
-            <TabsTrigger value="donors">Donors</TabsTrigger>
-            <TabsTrigger value="competitions">Competitions</TabsTrigger>
-            <TabsTrigger value="metrics">Impact Metrics</TabsTrigger>
+          <TabsList className="grid w-full grid-cols-2 sm:grid-cols-4 bg-white gap-1">
+            <TabsTrigger value="applications" className="text-xs sm:text-sm">Applications</TabsTrigger>
+            <TabsTrigger value="donors" className="text-xs sm:text-sm">Donors</TabsTrigger>
+            <TabsTrigger value="competitions" className="text-xs sm:text-sm">Competitions</TabsTrigger>
+            <TabsTrigger value="metrics" className="text-xs sm:text-sm">Metrics</TabsTrigger>
           </TabsList>
 
           <TabsContent value="applications">

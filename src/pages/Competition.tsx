@@ -87,30 +87,30 @@ const Competition = () => {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-white text-center mb-12">Time Remaining</h2>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-            <div className="bg-navy-primary rounded-lg p-8 text-center border-2 border-gold-800">
-              <div className="text-5xl md:text-6xl font-bold text-gold-600 mb-2">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6 max-w-4xl mx-auto">
+            <div className="bg-navy-primary rounded-lg p-4 sm:p-8 text-center border-2 border-gold-800">
+              <div className="text-3xl sm:text-5xl md:text-6xl font-bold text-gold-600 mb-2">
                 {String(countdown.days).padStart(2, '0')}
               </div>
-              <div className="text-gray-400 text-sm uppercase tracking-wide">Days</div>
+              <div className="text-gray-400 text-xs sm:text-sm uppercase tracking-wide">Days</div>
             </div>
-            <div className="bg-navy-primary rounded-lg p-8 text-center border-2 border-gold-800">
-              <div className="text-5xl md:text-6xl font-bold text-gold-600 mb-2">
+            <div className="bg-navy-primary rounded-lg p-4 sm:p-8 text-center border-2 border-gold-800">
+              <div className="text-3xl sm:text-5xl md:text-6xl font-bold text-gold-600 mb-2">
                 {String(countdown.hours).padStart(2, '0')}
               </div>
-              <div className="text-gray-400 text-sm uppercase tracking-wide">Hours</div>
+              <div className="text-gray-400 text-xs sm:text-sm uppercase tracking-wide">Hours</div>
             </div>
-            <div className="bg-navy-primary rounded-lg p-8 text-center border-2 border-gold-800">
-              <div className="text-5xl md:text-6xl font-bold text-gold-600 mb-2">
+            <div className="bg-navy-primary rounded-lg p-4 sm:p-8 text-center border-2 border-gold-800">
+              <div className="text-3xl sm:text-5xl md:text-6xl font-bold text-gold-600 mb-2">
                 {String(countdown.minutes).padStart(2, '0')}
               </div>
-              <div className="text-gray-400 text-sm uppercase tracking-wide">Minutes</div>
+              <div className="text-gray-400 text-xs sm:text-sm uppercase tracking-wide">Minutes</div>
             </div>
-            <div className="bg-navy-primary rounded-lg p-8 text-center border-2 border-gold-800">
-              <div className="text-5xl md:text-6xl font-bold text-gold-600 mb-2">
+            <div className="bg-navy-primary rounded-lg p-4 sm:p-8 text-center border-2 border-gold-800">
+              <div className="text-3xl sm:text-5xl md:text-6xl font-bold text-gold-600 mb-2">
                 {String(countdown.seconds).padStart(2, '0')}
               </div>
-              <div className="text-gray-400 text-sm uppercase tracking-wide">Seconds</div>
+              <div className="text-gray-400 text-xs sm:text-sm uppercase tracking-wide">Seconds</div>
             </div>
           </div>
         </div>
@@ -204,13 +204,13 @@ const Competition = () => {
       </section>
 
       {/* Entry Form */}
-      <section className="py-20 bg-white">
+      <section className="py-12 sm:py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto">
-            <h2 className="text-4xl font-bold text-navy-primary mb-4 text-center">Enter Now</h2>
-            <div className="w-20 h-1 bg-gold-600 mx-auto mb-8" />
+            <h2 className="text-3xl sm:text-4xl font-bold text-navy-primary mb-4 text-center">Enter Now</h2>
+            <div className="w-20 h-1 bg-gold-600 mx-auto mb-6 sm:mb-8" />
 
-            <Card className="border-2 border-navy-600 p-8">
+            <Card className="border-2 border-navy-600 p-4 sm:p-8">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <Label htmlFor="name">Full Name</Label>
